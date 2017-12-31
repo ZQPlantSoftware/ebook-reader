@@ -1,0 +1,88 @@
+<html>
+<head>
+    <title>欢迎使用EPUB阅读器</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="renderer" content="webkit">
+    <!-- <meta property="weixin:image" content="https://img3.doubanio.com/f/ark/be39d339b9b95b615e95c7dc542832c3e22ace84/pics/weixin_cover_new.png"> -->
+    <!-- <meta property="weixin:ga:dcs" content="read-reader"> -->
+
+    <style>
+        body {
+          margin: 0;
+          font-family: sans-serif;
+          background: #f6f4ec;
+          position: absolute;
+          height: 100%;
+          width: 100%;
+        }
+    </style>
+    <link rel="stylesheet" href="../../assets/mobile/mobile.css">
+    <script>var annotator = 'noConflictBeforeValue';</script>
+    <script src="../../assets/zepto/zepto.min.js"></script>
+    <script src="../../src/plugins/json2.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="main"></div>
+    </div>
+</body>
+
+<script>
+window.Helper = {
+    getKeyDownNumber: function(e) {
+        var keynum
+        var keychar
+        var numcheck
+
+        if(window.event) {// IE
+            keynum = e.keyCode
+        } else if (e.which) {// Netscape/Firefox/Opera
+            keynum = e.which
+        }
+
+        keychar = String.fromCharCode(keynum)
+        numcheck = /\d/
+        return !numcheck.test(keychar)
+    },
+    getRequest: function() {
+        var url = location.search; //获取url中"?"符后的字串
+        var theRequest = new Object();
+        if (url.indexOf("?") != -1) {
+            var str = url.substr(1);
+            strs = str.split("&");
+            for(var i = 0; i < strs.length; i ++) {
+                theRequest[strs[i].split("=")[0]]=unescape(strs[i].split("=")[1]);
+            }
+        }
+        return theRequest;
+    },
+    textFromPoint: function() {
+        var html = window.frames[0].document.elementFromPoint(2,2);
+//        html = html.innerHTML.replace(/<style(([\s\S])*?)<\/style>/g, '');
+        var text = html.innerText.replace(/\n/g,'') //html.innerHTML.replace(/<[^<>]+>/g,'');
+        return text;
+    }
+}
+
+var params = Helper.getRequest();
+
+params.r = params.r;
+
+params.uid = params.uid;
+params.bid = params.bid;
+params.token = params.token || 'asdfsa';
+params.percentage = params.percentage || 1;
+params.url = params.url || 'test/books/直道而行：孟子和荀子.epub';
+params.probation = params.probation || -1
+
+</script>
+<script src="../../../../assets/epub.js/libs/zip.min.js"></script>
+<script src="../../../../assets/epub.js/libs/localforage.min.js"></script>
+<script src="../../../../assets/epub.js/libs/rsvp.min.js"></script>
+<script src="../../../../assets/epub.js/epub.js"></script>
+<script src="../../../../assets/mobile/mobile.js"></script>
+<script src="../../common.js"></script>
+<script src="../../mobile.js"></script>
+</html>

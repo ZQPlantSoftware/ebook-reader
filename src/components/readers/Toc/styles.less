@@ -1,0 +1,72 @@
+.chapters_toc {
+
+    padding: 2.5em 4.6875em;
+    h2 {
+        text-align: center;
+        margin-bottom: 1.875em;
+        color: #888;
+    }
+
+    li {
+        padding-right: 5px;
+        min-height: 2.375em;
+        line-height: 2.375em;
+
+        margin: 0;
+        border-top: 1px solid #e9eadf;
+        word-wrap: break-word;
+        -ms-word-wrap: break-word;
+        cursor: pointer;
+    }
+
+    .toc_item {
+        display: block;
+        color: #666;
+        height: 2.375em;
+        line-height: 2.375em;
+        // padding: 0 3em 0 1em;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        _width: 100%;
+
+        text-align: left;
+
+        &.disable {
+            color: #bbb;
+        }
+
+        //.toc_item_forbid {
+        //    color: #bbb;
+        //}
+
+    }
+
+    .toc_item_child {
+        padding-left: 50px;
+
+        a {
+            color: #666;
+        }
+
+        &.disable {
+            color: #bbb;
+        }
+    }
+
+    .title {
+        margin: 0 1.5625em;
+        font-weight: bold;
+    }
+}
+
+.pattern_left, .pattern_right {
+    font-size: 16px;
+    display: inline-block;
+    margin-bottom: .3125em;
+    width: 1.375em;
+    height: .4375em;
+    vertical-align: middle;
+    background: url(/assets/images/icon-patterns-v2.png) no-repeat;
+    background: none, url(/assets/images/icon-patterns-v2.svg) no-repeat;
+}

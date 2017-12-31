@@ -1,0 +1,103 @@
+.search_dialog {
+    z-index: 999;
+    background: #f9f9f7;
+    color: #666;
+    border: 1px solid;
+    border-color: #acacac;
+    position: relative;
+    padding: 12px;
+    position: fixed;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+
+    width: 250px;
+    min-height: 45px;
+    top: 45px;
+    left: 47px;
+
+    &:before {
+        border-right-color: #acacac;
+        border-width: 6px 6px;
+        top: 18px;
+        margin-top: -6px;
+    }
+
+    .dialog_title {
+        font-size: 13px;
+        line-height: 1;
+        margin-bottom: 10px;
+    }
+
+    .search_box, .search_form {
+        border-bottom: 1px solid #c2c2c2;
+
+        input, button {
+            border: none;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            vertical-align: top;
+            background-color: transparent;
+        }
+        input {
+            width: 224px;
+            height: 26px;
+        }
+        button {
+            width: 26px;
+            height: 26px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #f2f2f0;
+        }
+    }
+}
+
+.search_box {
+    border: 1px solid #c2c2c2;
+    width: 250px;
+    font-size: 13px;
+
+    .results_title, li {
+        padding: 5px 8px;
+    }
+
+    .results_title {
+        margin-top: 4px;
+        font-weight: bold;
+    }
+
+    .search_result li + li {
+        border-top: 1px solid #e9eadf;
+    }
+
+    .result_item {
+        cursor: pointer;
+    }
+
+    .result_item:hover {
+        background: #f2f2f0;
+    }
+
+    .result_title {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        _width: 100%;
+        margin-top: 3px;
+        color: #999;
+    }
+
+    .abstract {
+        word-wrap: break-word;
+    }
+
+    .result {
+        overflow-y: auto;
+        max-height: 260px;
+        // max-height: -webkit-calc(100vh - 350px);
+        // max-height: -moz-calc(100vh - 350px);
+        // max-height: calc(100vh - 350px);
+    }
+}

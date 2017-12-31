@@ -1,0 +1,108 @@
+.bookMarks {
+    padding: 2.5em 4.6875em;
+
+
+    .bookmark {
+        position: relative;
+        display: block;
+        cursor: pointer;
+        background: #d1d0c8;
+        -webkit-transition: background-color .1s;
+        -moz-transition: background-color .1s;
+        transition: background-color .1s;
+
+        &.active {
+            background: #954648;
+        }
+    }
+
+    .bookmark:after {
+        content: ' ';
+        width: 0;
+        height: 0;
+        position: absolute;
+        bottom: 0;
+        border-style: solid;
+        border-width: 0 8px 7px 8px;
+        border-color: transparent transparent #f6f4ec;
+
+    }
+
+    .panel_hd {
+        margin-bottom: 30px;
+
+        h2 {
+            color: #444;
+            font-weight: bold;
+            font-size: 28px;
+        }
+    }
+
+    .panel_bd {
+        font-size: 12px;
+    }
+
+    li {
+        border-bottom: 1px solid #ddd;
+    }
+
+    .chapter {
+        font-weight: bold;
+        font-size: 16px;
+        padding: 38px 0 15px;
+    }
+
+    .chapter:first-child {
+        padding-top: 0;
+    }
+
+    .bookmark_item {
+        cursor: pointer;
+        padding: 13px 0;
+        color: #787875;
+
+        i:after {
+            border-width: 0 6px 5px 6px;
+        }
+
+        .date {
+            float: right;
+            color: #999;
+        }
+
+        .abstract {
+            line-height: 1.8;
+            word-wrap: break-word;
+            -ms-word-wrap: break-word;
+        }
+
+        .item_hd {
+            padding: 0 0 13px;
+
+            .percentage {
+                display: inline-block;
+            }
+
+            i {
+                display: inline-block;
+                width: 12px;
+                height: 16px;
+                margin-right: 8px;
+                vertical-align: middle;
+                border-color: transparent transparent #f6f4ec;
+            }
+
+            .num {
+                display: inline-block;
+                vertical-align: bottom;
+            }
+        }
+
+        .item_bd {}
+
+        &:hover .item_bd {
+            color: #aaa;
+        }
+    }
+
+}

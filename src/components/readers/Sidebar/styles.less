@@ -1,0 +1,87 @@
+.sidebar_control {
+    z-index: 50;
+    position: fixed;
+    top: 0;
+    margin-left: 44em;
+    height: 100%;
+}
+
+.controls_panel {
+    width: 1.5625em;
+    margin-top: .2em;
+
+    .controls_item {
+        height: 2em;
+        cursor: pointer;
+        border: 1px solid #e5e4db;
+        display: inline-block;
+        vertical-align: top;
+
+        i {
+            color: #7e8282;
+            width: 1.375em;
+            height: 1.375em;
+            line-height: 1.375em;
+            text-align: center;
+            margin-top: 5px;
+        }
+        &.active {
+            z-index: 10;
+            position: relative;
+            border: 1px solid #b0b5b5;
+            border-left: none;
+            margin-left: -9px;
+            width: 40px;
+            background-color: #f6f4ec;
+        }
+    }
+
+    .toggle_toc {
+        display: inline-block;
+    }
+
+    .toggle_toc.active {
+        z-index: 10;
+        position: relative;
+        border: 1px solid #b0b5b5;
+        border-left: none;
+        margin-left: -9px;
+        width: 40px;
+        background-color: #f6f4ec;
+    }
+
+    .toggle_bookmark.active {
+        z-index: 10;
+        position: relative;
+        border: 1px solid #b0b5b5;
+        border-left: none;
+        margin-left: -9px;
+        width: 40px;
+        background-color: #f6f4ec;
+    }
+
+    .panels_container {
+        position: absolute;
+        height: 100%;
+        top: 0;
+        left: -44em;
+        width: 43.375em;
+        background: #f6f4ec;
+        border-left: 1px solid #b7b7ae;
+        border-right: 1px solid #b7b7ae;
+        overflow-y: auto;
+        overflow-x: hidden;
+        -webkit-overflow-scrolling: touch;
+
+        .close {
+            position: absolute;
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            font-size: 18px;
+        }
+    }
+
+}

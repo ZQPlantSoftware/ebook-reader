@@ -1,0 +1,89 @@
+<html>
+<head>
+    <title>欢迎使用EPUB阅读器</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="renderer" content="webkit">
+    <!-- <meta property="weixin:image" content="https://img3.doubanio.com/f/ark/be39d339b9b95b615e95c7dc542832c3e22ace84/pics/weixin_cover_new.png"> -->
+    <!-- <meta property="weixin:ga:dcs" content="read-reader"> -->
+
+    <style>
+        body {
+          margin: 0;
+          font-family: sans-serif;
+          background: #f6f4ec;
+          position: absolute;
+          height: 100%;
+          width: 100%;
+        }
+
+        .page-wrapper .page-control {
+            padding: 0;
+            display: inline-block;
+            width: 100%;
+            height: 16px;
+            background: rgba(0,0,0,0.3);
+            border-bottom: 1px solid rgba(0,0,0,0.3);
+            position: relative;
+            -moz-border-radius: 0;
+            border-radius: 0;
+            -webkit-appearance: none;
+        }
+
+        .page-wrapper .page-control::-webkit-slider-thumb {
+            width: 40px;
+            height: 40px;
+            margin-top: -7px;
+            border: none;
+            background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFQAAABQCAYAAACH+lLXAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpCMDY3NkFGREIwQUIxMUUyOEZCOEQzNENEQzAzQzczRSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpCMDY3NkFGRUIwQUIxMUUyOEZCOEQzNENEQzAzQzczRSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkIwNjc2QUZCQjBBQjExRTI4RkI4RDM0Q0RDMDNDNzNFIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkIwNjc2QUZDQjBBQjExRTI4RkI4RDM0Q0RDMDNDNzNFIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+vJK3VQAABRVJREFUeNrsnE1vG0UYx2dn1t51kjp9oaWIItEiTqUUpHLsF0Bc8gngCpz4Cpx6QYUD4saBW7mBEAekcqmERCug0ApEI2jTlhe1duIU/LLe3Rlm7Jn1ZPbFWYgIpP8nejR+4k0Ov/37mecZ74wnhCCwnTMPQAEUQAEUBqAACqAwAAVQAIUBKIACKIDCABRAARQGoAAKoLB5QAtee5a718AIEZYTe1TidCFS7cx6TQF2CzwuPXVGYQM1zrQ3pDf1aMB6ADrxVPtYeqw9g6rMhulLD44GzfbKY4ffbDG2It9Yxic8b6MgFCQeX3139dZZDTWxgVIDU/riq08+fu6F4ydePn3iKRI0GqDn2A93bpMvVm+Q8fJ+cr+3+cqHqz9f0FC5AupbClUf81aLspUnmk3y2/VrhCcJCDp27Y8HpNdaIC2J7cjS4jn5qwv2+741GSk5BpSS9rDTAbkSG/CUjD1KQplSF4Lmo86klc3gZmZvepLvMOUTN4Z4Fis+pnRnHs1N1L5bLo05Jy1Gs3+kDPEsVnyywt3L16XUKewpqvj5nZCC5E1+tn7cjULtwp40ZRId6LvQ8qe8ByliEys+P979hYSSajhFZndNGVBLxjJHGC1jzI2Kz/LBQxIum6aCex1SpNDMVI4IfDZ53c/uDGITKz6bm10SSYWOCppHvyhHiIIGFuN0nDfH5IA2KbNyKNM5JEWsY8WnFlCVLrjOGRjzo+fVVGgs1RlCiaVxbNWh2wKaX2vGWGetPQc0YGzSr0KZxbHiU2W06jsRWPlnd9sKHXMhC1ame1d9ZxBnseJTT6GQaLVC687yakEUSiyPFZ9aCkUW/WdZNF+HCg4lVsSKT+06FNXm361CC3MogxIrc2jdOhQpdGdn+el3SlBieR3K63ZKkGj1HF9zlg8YJaNkemcWzJ1BnMUBo3UVCkMv/x/q5f2iW4B6s2KsO8uHkzo0ce4MYhOHFOuhu5tDI9mrLjg5BPEsjgTq0N2tQ0O1Hpo4sxtiK4dSrDbt6mrTWKAOraxDJZ8rnfUzMlRPiW1ilv+XZnkxWw+VvTxm89LY+U5JVClUYD201nqomJdDJ9vuRlwkIaO+hw4pF/dlPEz5kMy2IxbWofZD93yc8t9TZ88ifOrq+duYi44FNAfWKNRsBE1kvvhyPUqOtX2KutOJFVXJ5wqZbkVMy3KoIa0uir/a6H28zhOObJm3bpJwyecjMtvfWahQs8tWXRB9fq/z/ZmDBz4dNJovEdSdWdyVKl3rDz9TfBSnMpXaCo31hX++99PNt+6Oom83pFCROwnZkDB/HUXfvX/z9nnFR3OKixRqHzyg9nq2pC9JP7DI2LHXnz7+2tEwfHHJ8zzVw+7zGfEeAmVOnlQW0xKpk6RirT+4+MGtO+9sxPGafLunoQ5dqPaJDmavpw1V7ZXfd/aRQyef3d9eORwEp9sN/4j8Axbpr1JNkbvXYgk4kuVRZ5Am31xe731y6X73hkqhutW0Yabnn3uGv3H1OjFA7U4p1WodWTP/+FKn+7V0lTfUfvq2hh/pa1v62qEe/8+x0DHX0BL9uwc67ivxaj5Z/nQbIbf1TO0iX9+FoYbZ0AsClBQ+tbdnjNtVjxaP7RnMt58/Jeb1+u75I74G6WtnJH9qzl4yu8kxlU9ilUmpNbPnYNo5tAhq2Sk53h5dnBKOSt0TcDjJHzG0LaBF68wP2zlOokCxpQsiW4DiZLEdXo0C0J21vwQYAMB7nMLYTc8DAAAAAElFTkSuQmCC") no-repeat center;
+            -webkit-background-size: 40px 40px;
+            background-size: 40px 40px;
+            -webkit-appearance: none;
+        }
+    </style>
+    <script src="assets/zepto/zepto.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="main" style="background-color: red; width: 100%; height: 100%">
+            以下是分页相关：
+            <div class="page-wrapper">
+                <input class="page-control"
+                    type="range"
+                    onChange="pageControlChange()"
+                    value=""
+                    step="1" min="1" max="100" />
+            </div>
+            <div id="output">
+
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+
+function pageControlChange (e) {
+    console.log("change 啦")
+    $('#output').append("<p>on change事件啦</p>")
+}
+// $(function () {
+//     // var $main = $('#main')
+//     // $main.bind('click', e => {
+//     //     // alert("点击事件啦")
+//     //     $main.append("<p>点击事件啦</p>")
+//     // })
+//     // .bind('touchstart', function (e) {
+//     //     $main.append("<p>touchstart</p>")
+//     // })
+//     // .bind('touchmove', function (e) {
+//     //     $main.append("<p>touchmove</p>")
+//     // })
+//     // .bind('touchend', function (e) {
+//     //     $main.append("<p>touchend</p>")
+//     // })
+// })
+</script>
+
+</html>

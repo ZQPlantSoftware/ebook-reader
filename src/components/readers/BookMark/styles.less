@@ -1,0 +1,37 @@
+.bookmark {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    background: #d1d0c8;
+    -webkit-transition: background-color .1s;
+    -moz-transition: background-color .1s;
+    transition: background-color .1s;
+}
+
+.bookmarks_layout {
+    display: block;
+    position: fixed;
+    top: 0;
+
+    .bookmark {
+        top: 88px;
+        left: 662px;
+        height: 26px;
+        width: 16px;
+
+        &.active {
+            background: #954648;
+        }
+
+        &:after {
+            content: ' ';
+            width: 0;
+            height: 0;
+            position: absolute;
+            bottom: 0;
+            border-style: solid;
+            border-width: 0 8px 7px 8px;
+            border-color: transparent transparent #f6f4ec;
+        }
+    }
+}

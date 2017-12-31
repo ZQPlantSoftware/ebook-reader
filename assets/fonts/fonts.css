@@ -1,0 +1,165 @@
+
+@font-face {
+    font-family: 'arkicons';
+    src: url(/f/ark/9d0b85d27ce1a6a89d937162470fcc87e50b37d6/pics/iconic/arkicons_v8.eot);
+    src: url(/f/ark/9d0b85d27ce1a6a89d937162470fcc87e50b37d6/pics/iconic/arkicons_v8.eot) format('embedded-opentype'),url(/f/ark/d1fb8492ef13b45a40b64ae18845721da457fa36/pics/iconic/arkicons_v8.woff) format('woff'),url(/f/ark/8f77326c1b195c3d1ac86694bd1cd0711101f75e/pics/iconic/arkicons_v8.ttf) format('truetype'),url(/f/ark/73cb6e48bbcc16d3ff7bcb5c3cc616a2b64a8ff5/pics/iconic/arkicons_v8.svg) format('svg');
+    font-weight: normal;
+    font-style: normal
+}
+
+[data-icon]:before {
+    font-family: 'arkicons';
+    content: attr(data-icon);
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.arkicon-star,.arkicon-share,.arkicon-salon,.arkicon-remark,.arkicon-remark-dash,.arkicon-pin-on,.arkicon-pin-off,.arkicon-list,.arkicon-layout,.arkicon-layout.vertical,.arkicon-layout-vertical,.arkicon-helper,.arkicon-fullscreen,.arkicon-notification,.arkicon-comment,.arkicon-bookmark,.arkicon-bookmarks,.arkicon-back,.arkicon-annotation,.arkicon-annotations,.arkicon-annotations-bold,.arkicon-zoom-in,.arkicon-zoom-out,.arkicon-expand,.arkicon-copy,.arkicon-angle-right,.arkicon-angle-left,.arkicon-times,.arkicon-feed {
+    font-family: 'arkicons';
+    color: #7e8282;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.arkicon-zoom-out:before {
+    font-size: 1.375em;
+    content: "\e600"
+}
+
+.arkicon-zoom-in:before {
+    font-size: 1.375em;
+    content: "\e601"
+}
+
+.arkicon-star:before {
+    font-size: 1.125em;
+    content: "\e602"
+}
+
+.arkicon-share:before {
+    font-size: 1.375em;
+    content: "\e603"
+}
+
+.arkicon-salon:before {
+    font-size: 1.1875em;
+    content: "\e604"
+}
+
+.arkicon-remark:before {
+    content: "\e605"
+}
+
+.arkicon-remark-dash:before {
+    content: "\e606"
+}
+
+.arkicon-pin-on:before {
+    content: "\e607"
+}
+
+.arkicon-pin-off:before {
+    content: "\e608"
+}
+
+.arkicon-notification:before {
+    font-size: 1.375em;
+    content: "\e609"
+}
+
+.arkicon-list:before {
+    font-size: .8125em;
+    content: "\e60a"
+}
+
+.arkicon-layout.vertical:before,.arkicon-layout-vertical:before {
+    content: "\e60b"
+}
+
+.arkicon-layout:before {
+    content: "\e60c"
+}
+
+.arkicon-helper:before {
+    content: "\e60d"
+}
+
+.arkicon-fullscreen:before {
+    content: "\e60e"
+}
+
+.arkicon-expand:before {
+    font-size: 1.375em;
+    content: "\e60f"
+}
+
+.arkicon-copy:before {
+    content: "\e610"
+}
+
+.arkicon-comment:before {
+    content: "\e611"
+}
+
+.arkicon-bookmarks:before {
+    font-size: 1.125em;
+    content: "\e612"
+}
+
+.arkicon-bookmark:before {
+    content: "\e613"
+}
+
+.arkicon-back:before {
+    font-size: .875em;
+    content: "\e614"
+}
+
+.arkicon-annotations:before {
+    font-size: 1.1875em;
+    content: "\e615"
+}
+
+.arkicon-annotations-bold:before {
+    content: "\e616"
+}
+
+.arkicon-annotation:before {
+    content: "\e617"
+}
+
+.arkicon-times:before {
+    content: "\e618"
+}
+
+.arkicon-angle-right:before {
+    content: "\e619"
+}
+
+.arkicon-angle-left:before {
+    content: "\e61a"
+}
+
+.arkicon-feed:before {
+    content: "\e61b";
+    font-size: .9125em
+}
+
+@font-face {
+    font-family: 'doucoin';
+    src: url(/f/ark/6884fe5b5835d68925eb8bfedf253f60b0081606/pics/iconic/doucoin.eot);
+    src: url(/f/ark/6884fe5b5835d68925eb8bfedf253f60b0081606/pics/iconic/doucoin.eot) format('embedded-opentype'),url(/f/ark/6487b12cd6469de55381bb8cc3ffab1c3583350f/pics/iconic/doucoin.woff) format('woff'),url(/f/ark/0aaeccddd95375af390fb1ee7bca787824b9801c/pics/iconic/doucoin.ttf) format('truetype'),url(/f/ark/22e5905b4acd543e923891251f27407c175fdaec/pics/iconic/doucoin.svg) format('svg');
+    font-weight: normal;
+    font-style: normal
+}

@@ -1,0 +1,128 @@
+
+.loadingView {
+    position: 'absolute';
+    top: '50%';
+    left: '10%';
+    right: '10%';
+    color: '#ccc';
+    text-align: 'center';
+    margintop: '-.5em';
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.article {
+    position: relative;
+    width: 43.375em;
+    height: 50em;
+    margin: 0 auto;
+    padding-left: 0;
+    overflow: hidden;
+
+    .inner {
+        position: absolute;
+        left: 0;
+        margin-left: 0;
+        overflow: hidden;
+
+        .page {
+            position: relative;
+            float: left;
+            margin: 0;
+            height: 42em;
+            width: 34em;
+            padding: 4em 4.6875em 2.5em;
+            background: #f6f4ec;
+            cursor: default;
+
+            .ft {
+                position: absolute;
+                color: #999;
+                bottom: 2em;
+                left: 2em;
+                font: .75em Georgia;
+            }
+        }
+    }
+}
+
+.loadingView {
+    position: 'absolute';
+    top: '50%';
+    left: '10%';
+    right: '10%';
+    color: '#ccc';
+    text-align: 'center';
+    margin-top: '-.5em';
+}
+
+.titleArea {
+    position: 'absolute';
+    top: 20;
+    left: 50;
+    right: 50;
+    textAlign: 'center';
+    color: '#999'
+  }
+
+.reader {
+    // position: 'absolute';
+    // top: 50;
+    // left: 50;
+    // bottom: 20;
+    // right: 50;
+}
+
+//progress
+.reading_progress {
+    bottom: 0;
+    left: 0;
+    z-index: 50;
+    position: fixed;
+    display: block;
+    color: #855b5b;
+}
+
+.reading_progress, .reading_progress[role] {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    -webkit-background-size: auto auto;
+    -moz-background-size: auto;
+    background-size: auto;
+    width: 100%;
+    height: 5px;
+}
+
+.reading_progress::-webkit-progress-bar {
+    background: #d8d6ce;
+}
+
+.night-theme #reading-progress::-webkit-progress-bar {
+    background: #454545
+}
+
+.reading_progress::-moz-progress-bar {
+    background-color: #855b5b
+}
+
+.reading_progress::-webkit-progress-value {
+    background-color: #855b5b;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    transition: all .2s
+}
+
+.reading_progress[role],.reading_progress[aria-valuenow]:before {
+    background-color: #855b5b
+}
+
+.ua-ie8 .reading_progress[aria-valuenow]:before,.ua-ie9 .reading_progress[aria-valuenow]:before,.ua-ie10 .reading_progress[aria-valuenow]:before {
+    content: '';
+    display: block;
+    height: 100%
+}
