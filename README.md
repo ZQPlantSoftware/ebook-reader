@@ -12,8 +12,37 @@ The whole reader system with 3 part, React front end application, JAVA backend s
 
 ** It's a e-book reader only for EPUB now, we may support other format of ebook later **
 
+## Front End Part
+
+To install and start
+
+```
+$ npm install
+$ npm start
+```
+
+Then go to http://localhost:8989?r={bid:5,probation:100,uid:1}
+
+At this point, we need start [backend server](https://github.com/ZQPlantSoftware/ebook-reader-services) which run in port 9898.
+
+#### Init Parameters
+
+- bid: book id in database.
+- probation: How long user can read this book(For user which not pay).
+- uid: User's union id.
+
+And this json parameter `r` can be encryption by `DES` ([Data Encryption Standard](https://en.wikipedia.org/wiki/Data_Encryption_Standard)) When it's encrypted, it will looks like:
+
+```
+http://localhost:8989?r=2a6d47860742100b969b22a33273f91a38bcfa0ed8370d6d3a087fa090b88ae0
+```
+
+To build production model:
+
+```
+npm run build
+```
+
 ## License
 
 MIT
-
-It can use and modify free, just do everything if you want.
