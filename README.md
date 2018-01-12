@@ -4,6 +4,9 @@ This is a nice e-book reader base on `epub.js` `React` support both PC and mobil
 
 The whole reader system with 3 part, React front end application, JAVA backend services with mysql database and a python search engine.
 
+- [DEMO for PC](http://ebook.tefact.com/?r={bid:5,probation:100,uid:1})
+- [DEMO for mobile](http://ebook.tefact.com/mobile.html?r={bid:5,probation:100,uid:1})
+
 1. [Reader Frontend Page](https://github.com/ZQPlantSoftware/epub-reader) React base front end application
 
 2. [Java Reader Backend Services](https://github.com/ZQPlantSoftware/epub-reader-services) We use Spring Boot and MySQL
